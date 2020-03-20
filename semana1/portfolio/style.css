@@ -1,0 +1,117 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+.conteiner1 {
+  height: 450px;
+  background-image: url('fundo.jpg');
+
+
+
+}
+
+.conteiner1 .titulo  {
+text-align: center;
+background-color: gold;
+margin-top: auto;
+}
+
+.titulo1 {
+  font-family: 'Electrolize', sans-serif;
+  font-size: 50px;
+  padding-top: 3%;
+  color: white;
+  text-align: center;
+}
+
+.conteiner1 p {
+  font-style: italic;
+  color: white;
+  text-align: center;
+}
+
+.conteiner2{
+height: 900px;
+background-color: #0F0F0C;
+
+}
+
+.conteiner2 p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding-top: 25px;
+
+
+}
+
+.conteiner2 h2  {
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+
+}
+
+.trabalhos {
+  color: white;
+  text-align: center;
+
+}
+
+img{
+  display: inline;
+  text-align: center;
+  padding-left: 70px;
+  padding-top: 30px;
+
+}
+
+
+.conteiner3 {
+  height: 500px;
+  background-color: #29252c;
+}
+
+.conteiner3 h2 {
+color: white;
+text-align: center;
+padding-top: 25px;
+font-size: 1.8em;
+
+
+}
+
+.formulario input {
+display: inline;
+padding-top: 8px;
+margin-top: 10px;
+position: relative;
+left: 363px;
+
+}
+
+#mensagem {
+  display: block;
+  margin-top: 10px;
+  width: 500px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px;
+  width: 80px;
+  position: relative;
+  left: 362px;
+}
+
+.icones {
+  width: 40px;
+  margin-top: 40px;
+  position: relative;
+  left: 410px;
+
+}
