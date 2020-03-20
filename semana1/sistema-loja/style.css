@@ -1,0 +1,118 @@
+* {
+  margin: 0em;
+  padding: 0em;
+}
+
+h1 {
+  color: #ff1e56;
+  text-align: center;
+}
+
+h6 {
+  text-align: center;
+}
+
+#marca {
+  font-size: 25px;
+  height: 120px;
+  padding-top: 20px;
+  background-color: #f1fcfc;
+}
+
+#menu ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+#menu ul li {
+  display: inline-block;
+  font-size: 15px;
+  margin-left: 140px;
+  padding-top: 20px;
+}
+
+section {
+  height: 900px;
+}
+
+#text li {
+  position: relative;
+  top
+}
+
+
+
+img {
+  height: 450px;
+  display: inline-block;
+  position: relative;
+  top: 100px;
+  margin-left: 180px;
+
+}
+
+footer {
+  text-align: center;
+  height: 200px;
+  background-image: linear-gradient(-225deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 100%);
+
+}
+
+footer p {
+  margin-top: 80px;
+  font-size: 16px;
+
+
+}
+
+
+.form{
+  margin-top: 180px;
+  text-align: center;
+  padding: 20px;
+
+}
+
+.form p {
+  margin-top: 6px;
+}
+
+.form input {
+  margin-top: 6px;
+  padding: 3px;
+}
+
+.form button {
+  padding: 3px;
+}
+
+
+.anuncios{
+  display: inline-block;
+  font-size: 25px;
+  margin-left: 140px;
+  list-style: none;
+}
+
+.anuncios ul li {
+  text-align: center;
+
+}
+
+.conteiner{
+  height: 750px;
+  padding: 0px;
+  margin: 0px;
+}
+
+table th  {
+  padding-top: 10px;
+  padding-left: 50px;
+
+}
+
+table td{
+  padding-left: 50px;
+
+}
