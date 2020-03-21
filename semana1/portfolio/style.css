@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0px;
   margin: 0px;
 }
@@ -6,15 +6,12 @@
 .conteiner1 {
   height: 450px;
   background-image: url('fundo.jpg');
-
-
-
 }
 
-.conteiner1 .titulo  {
-text-align: center;
-background-color: gold;
-margin-top: auto;
+.conteiner1 .titulo {
+  text-align: center;
+  background-color: gold;
+  margin-top: auto;
 }
 
 .titulo1 {
@@ -31,10 +28,9 @@ margin-top: auto;
   text-align: center;
 }
 
-.conteiner2{
-height: 900px;
-background-color: #0F0F0C;
-
+.conteiner2 {
+  height: 900px;
+  background-color: #0F0F0C;
 }
 
 .conteiner2 p {
@@ -42,53 +38,45 @@ background-color: #0F0F0C;
   color: white;
   font-size: 20px;
   padding-top: 25px;
-
-
 }
 
-.conteiner2 h2  {
+.conteiner2 h2 {
   color: white;
   text-align: center;
   padding-top: 30px;
-
 }
 
 .trabalhos {
   color: white;
   text-align: center;
-
 }
 
-img{
+img {
   display: inline;
   text-align: center;
   padding-left: 70px;
   padding-top: 30px;
-
 }
-
 
 .conteiner3 {
   height: 500px;
   background-color: #29252c;
+  /*background-color: rgb(26, 26, 26);*/
 }
 
 .conteiner3 h2 {
-color: white;
-text-align: center;
-padding-top: 25px;
-font-size: 1.8em;
-
-
+  color: white;
+  text-align: center;
+  padding-top: 25px;
+  font-size: 1.8em;
 }
 
 .formulario input {
-display: inline;
-padding-top: 8px;
-margin-top: 10px;
-position: relative;
-left: 363px;
-
+  display: inline;
+  padding-top: 8px;
+  margin-top: 10px;
+  position: relative;
+  left: 363px;
 }
 
 #mensagem {
@@ -113,5 +101,4 @@ button {
   margin-top: 40px;
   position: relative;
   left: 410px;
-
 }
