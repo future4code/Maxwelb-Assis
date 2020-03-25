@@ -32,4 +32,18 @@
 
 16 - grid-area: 1 / 2 / 4 / 6
 
-17 -   
+17 - grid-area: 2 / 3 / 5 / 6
+
+18 - order: 3
+
+19 - order: -3
+
+20 -grid-template-columns:50%
+
+21 - grid-template-columns: repeat(8, 12.5%);
+
+22 - grid-template-columns: 100px 3em 40%
+
+23 - grid-template-columns: 1fr 5fr;
+
+24 -  
