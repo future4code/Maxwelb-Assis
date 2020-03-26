@@ -1,42 +1,33 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
 }
 
-
-.topo{
+.topo {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   height: 100px;
   width: 100vw;
   background-color: black;
-
-
-
-
 }
 
-#titulo{
+#titulo {
   text-align: center;
   grid-area: 2 / 2 / 2 / 3;
   font-size: 30px;
   color: white;
-
-
-
 }
 
-#busca{
+#busca {
   display: block;
   text-align: center;
   grid-area: 2 / 3 / 2 / 4;
   width: 200px;
   margin-left: 80px
-
 }
 
-.videos{
+.videos {
   width: 100vw;
   height: 550px;
   display: grid;
@@ -46,27 +37,23 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
-
 }
 
-#item8{
-grid-row-start: 5;
-grid-row-end: 6;
-grid-column-start: 2;
-grid-column-end: 3;
-
-}
-
-#item9{
+#item8 {
   grid-row-start: 5;
   grid-row-end: 6;
-  grid-column-start:3 ;
-  grid-column-end: 4;
-
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
+#item9 {
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
 
-footer{
+footer {
   background-color: black;
   display: flex;
   justify-content: center;
@@ -75,25 +62,14 @@ footer{
   height: 300px;
 }
 
-p{
+p {
   color: white;
 }
 
-
-.player{
+.player {
   display: flex;
   height: 550px;
-  width:100vw;
+  width: 100vw;
   justify-content: center;
   align-items: center;
-
-
-
-
-}
-
-video{
-    width: 60vw;
-
-
 }
