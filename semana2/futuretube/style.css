@@ -1,0 +1,75 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.topo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 100px;
+  width: 100vw;
+  background-color: black;
+}
+
+#titulo {
+  text-align: center;
+  grid-area: 2 / 2 / 2 / 3;
+  font-size: 30px;
+  color: white;
+}
+
+#busca {
+  display: block;
+  text-align: center;
+  grid-area: 2 / 3 / 2 / 4;
+  width: 200px;
+  margin-left: 80px
+}
+
+.videos {
+  width: 100vw;
+  height: 550px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+}
+
+#item8 {
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#item9 {
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100vw;
+  height: 300px;
+}
+
+p {
+  color: white;
+}
+
+.player {
+  display: flex;
+  height: 550px;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
