@@ -1,38 +1,33 @@
-/**
- * EXEMPLO DE UTILIZAÇÃO DA 'comprarCarta'
- * 
- * 
-    const carta = comprarCarta(); // Sorteia uma carta. Por exemplo, o rei de ouros
-    
-    console.log(carta.texto) // imprime o texto da carta. Exemplo: "K♦️" (indica "K" de ouros)
-    console.log(carta.valor) // imprime o valor da carta (um número). Exemplo: 10 (dado que "K" vale 10)
- * 
- * 
- * 
- */
+//NOSSO JOGO
 
-const carta = comprarCarta();
-let resultado = []
-let texto = []
-let valor = [] 
 console.log("Bem vindo ao jogo de Blackjack!")
-//alert("Bem vindo ao jogo de Blackjack!")
 
 
-var z = confirm("Quer começar uma nova rodada?")
-if (z == true) {
+let saques = 4
+let textos = []
+let valores = []
 
-   let carta = comprarCarta();
-   texto.push(carta.texto)
-   valor.push(carta.valor)
 
-   console.log(texto)
+if (confirm("Quer iniciar uma nova rodada ?")) {
+   true
+   for (var i = 0; i < saques; i++) {
+      const carta = comprarCarta()
+      textos.push(carta.texto)
+      valores.push(carta.valor)
+      var somaJogador = (valores[0] + valores[1])
+      var somaCpu = (valores[2] + valores[3])
 
-}
+   }
+   console.log("Usuário - cartas: " + textos[0], textos[1] + " pontuação " + somaJogador)
+   console.log("Computador - cartas: " + textos[2], textos[3] + " pontuação " + somaCpu)
 
-   
-  
- else {
-   console.log("o jogo acabou")
-   //alert("o jogo acabou")
+   if (somaJogador > somaCpu) {
+      console.log("Usuario Ganhou !! ")
+   } else if (somaJogador < somaCpu) {
+      console.log("Computador ganhou !!")
+   } else {
+      console.log("Empate !!")
+   }
+} else {
+   console.log("O Jogo Acabou")
 }
