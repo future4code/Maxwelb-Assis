@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <header>
+        <h1>Max Bank</h1>
 
     </header>
     <section id="despesas">
-    <h1>Controlador de Despesas</h1>
+        <h1>Controlador de Despesas</h1><br>
 
-    <p>Cadastrar Despesas</p>
+        <p>Cadastrar Despesas</p><br>
 
-    <label for="">valor</label>
-    <input id="desp1" type="number">
+        <label for="">Valor</label>
+        <input id="desp1" type="number">
 
-    <label for="">Tipo de Despesa</label>
-    <select name="" id="desp2">
-        <option value="Casa">Casa</option>
-        <option value="Transporte">Transporte</option>
-        <option value="Alimentação">Alimentação</option>
-    </select>
+        <label for="">Tipo de Despesa</label>
+        <select name="" id="desp2">
+            <option value="Casa">Casa</option>
+            <option value="Transporte">Transporte</option>
+            <option value="Alimentação">Alimentação</option>
+        </select>
 
-    <label for="">Descrição</label>
-    <input id="desp3" type="text">
-    <button onclick="apertar1()">Cadastrar Despesa</button>
+        <label for="">Descrição</label>
+        <input id="desp3" type="text">
+        <button onclick="apertar1()">Cadastrar Despesa</button>
 
     </section>
 
 
     <section id="detalhadas">
-    <h1>Despesas detalhadas</h1>
+        <h1>Despesas detalhadas</h1><br>
 
-    <label for="">Tipo de Despesa</label>
-    <select name="" id="det">
-        <option value="">Casa</option>
-        <option value="">Transporte</option>
-        <option value="">Alimentação</option>
-    </select>
+        <label for="">Tipo de Despesa</label><br>
+        <select name="" id="det">
+            <option value="casa">Casa</option>
+            <option value="transporte">Transporte</option>
+            <option value="alimentação">Alimentação</option>
+        </select>
 
-    <label for="">Valor Minino</label>
-    <input id="min" type="text">
-    <label id="max" for="">Valor Maximo</label>
-    <input type="text">
-    <button onclick="apagar">Filtrar</button>
-    <button onclick="apertar2">Limpar Filtros</button>
+        <label for="">Valor Minino</label>
+        <input id="min" type="number">
+        <label for="">Valor Maximo</label>
+        <input id="max" type="number">
+        <button onclick="apertar2()">Filtrar</button>
+        <button onclick="apagar()">Limpar Filtros</button>
 
     </section>
 
     <section id="extrato">
         <h1>Extrato</h1>
-        <p>Valor Total</p>
+        <span><b>Total de Despesas: </b><span id="despesasfinal"></span></span>
     </section>
 
 
-<script src="script.js"></script>    
+    <script src="script.js"></script>
 </body>
+
 </html>
