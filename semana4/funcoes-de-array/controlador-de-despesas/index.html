@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <section id="despesas">
+    <h1>Controlador de Despesas</h1>
+
+    <p>Cadastrar Despesas</p>
+
+    <label for="">valor</label>
+    <input id="desp1" type="number">
+
+    <label for="">Tipo de Despesa</label>
+    <select name="" id="desp2">
+        <option value="Casa">Casa</option>
+        <option value="Transporte">Transporte</option>
+        <option value="Alimentação">Alimentação</option>
+    </select>
+
+    <label for="">Descrição</label>
+    <input id="desp3" type="text">
+    <button onclick="apertar1()">Cadastrar Despesa</button>
+
+    </section>
+
+
+    <section id="detalhadas">
+    <h1>Despesas detalhadas</h1>
+
+    <label for="">Tipo de Despesa</label>
+    <select name="" id="det">
+        <option value="">Casa</option>
+        <option value="">Transporte</option>
+        <option value="">Alimentação</option>
+    </select>
+
+    <label for="">Valor Minino</label>
+    <input id="min" type="text">
+    <label id="max" for="">Valor Maximo</label>
+    <input type="text">
+    <button onclick="apagar">Filtrar</button>
+    <button onclick="apertar2">Limpar Filtros</button>
+
+    </section>
+
+    <section id="extrato">
+        <h1>Extrato</h1>
+        <p>Valor Total</p>
+    </section>
+
+
+<script src="script.js"></script>    
+</body>
+</html>

@@ -1,0 +1,35 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+#despesas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    /*background-color: coral;*/
+
+
+}
+
+#detalhadas{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 350px;
+    /*background-color: pink;*/
+
+}
+
+
+#extrato{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    /*background-color: gainsboro;*/
+
+
+}
