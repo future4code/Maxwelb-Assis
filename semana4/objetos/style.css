@@ -1,0 +1,45 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+#header {
+    display: flex;
+    text-align: center;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+#container {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 600px;
+    align-items: center;
+
+
+
+
+}
+
+#postagem {
+    position: relative;
+    display: block;
+    bottom: 110px;
+}
+
+#display {
+    width: 450px;
+    height: 600px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    text-align: center;
+
+}
