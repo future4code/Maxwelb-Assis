@@ -103,20 +103,19 @@ AULA 15
 
 EXERCICICOS DE FUNÇOES
 
-1) /*let a = [5,2,3,6]
-let array = []
+1) /*let array = []
 
 
-function numeros([]) {
-    let array = []
-    array.push()
-    console.log(numeros)
+function numeros(a,b,c,d,) {
+    array.push(a,b,c,d)
+    array.sort()
+    console.log(`o segundo maior numero e ${array[2]} e o segundo menor e ${array[1]}`)
+   
 
-}
 
+    }
 
-let resultado = numeros(a)
-//console.log(resultado) */
+resultado = numeros(5,2,3,6) */
 
 
 2)
@@ -125,6 +124,32 @@ max()*/
 
 
 EXERCICIOS DE OBJETO
+
+
+1) /* arrays sao conjuntos de dados, podem receber numeros, strings e funçoes, o objeto tambem e um conjunto de
+dados, porem e organizado em propriedades e valores da seguinte forma {propriedade: valor } */
+
+
+2) /*
+let obj = {}
+
+function triangulo (lado1, lado2) {
+    obj.largura = lado1
+    obj.altura = lado2
+    obj.perimetro = 2 * (lado1 + lado2)
+    obj.area = lado1 * lado2
+    console.log(obj)
+
+
+
+
+
+
+}
+
+
+
+triangulo(15, 25)*/
 
 
 
