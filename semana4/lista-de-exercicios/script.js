@@ -95,3 +95,37 @@ function numeros(a, b) {
 
 }
 numeros(5,2) */
+
+
+
+AULA 15
+
+
+EXERCICICOS DE FUNÇOES
+
+1) /*let a = [5,2,3,6]
+let array = []
+
+
+function numeros([]) {
+    let array = []
+    array.push()
+    console.log(numeros)
+
+}
+
+
+let resultado = numeros(a)
+//console.log(resultado) */
+
+
+2)
+/* max = () =>{console.log("Labenu_")}
+max()*/
+
+
+EXERCICIOS DE OBJETO
+
+
+
+
