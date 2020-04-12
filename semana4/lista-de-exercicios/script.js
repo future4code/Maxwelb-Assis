@@ -230,7 +230,10 @@ console.log(alunosmenores)*/
 
 
 
-3) /* 
+3)  
+
+a) /*
+
 let array = [1, 2, 3, 4, 5, 6]
 let arraydobro = []
 
@@ -244,6 +247,45 @@ function dobro(max) {
 }
 
 dobro(array) */ 
+
+
+b) /*
+
+let array = [1, 2, 3, 4, 5, 6]
+let arraytriplo = []
+
+function triplo(max) {
+  for(numero of array) {
+  arraytriplo.push(String(numero*3))
+  console.log(arraytriplo)
+  
+  }
+}
+
+triplo(array) */
+
+
+
+c) 
+/*
+const array = [1, 2, 3, 4, 5, 6]
+let numeros = []
+
+function parimpar () {
+    for (numero of array) {
+        if (numero % 2 ===0){
+            numeros.push(String(numero) + " e par")
+        }
+        else {
+            numeros.push(String(numero) + " e impar")
+        }
+    }
+} 
+
+
+parimpar(array)
+
+console.log(numeros) */
 
 
 
