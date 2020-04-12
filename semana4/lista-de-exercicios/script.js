@@ -153,4 +153,97 @@ triangulo(15, 25)*/
 
 
 
+3) /*
+let filme = [{titulo: "Guerra mundial",  ano: 2020, diretor: "Joao", ator: "paulo"}, {ator: "pedro"}]
+
+console.log(`Venha assistir ao filme ${filme[0].titulo}, de ${filme[0].ano}, 
+dirigido por ${filme[0].diretor} e estrelado por ${filme[0].ator} e ${filme[1].ator}`) */
+
+
+4)
+
+
+
+AULA 16
+
+
+
+1) /* filter, map e forEach
+
+function filtragem(valor) {
+    return valor >= 10;
+  }
+  
+  var filtrado = [12, 5, 8, 130, 44].filter(filtragem);
+  
+  console.log(filtrado)
+*/
+
+
+2)
+
+a) /*let aluno = [
+	{ nome: "Pedro", idade: 20 },
+	{ nome: "João", idade: 10 },
+	{ nome: "Paula", idade: 12 },
+	{ nome: "Artur", idade: 89 } 
+]
+
+
+function idademaior(aluno) {
+    return aluno.idade >= 20
+}
+
+function idademenor(aluno) {
+    return aluno.idade <= 20
+}
+
+let alunosmaiores = aluno.filter(idademaior)
+let alunosmenores = aluno.filter(idademenor)
+
+console.log(alunosmaiores)
+console.log(alunosmenores)*/
+
+
+b) 
+/*let aluno = [
+	{ nome: "Pedro", idade: 20 },
+	{ nome: "João", idade: 10 },
+	{ nome: "Paula", idade: 12 },
+	{ nome: "Artur", idade: 89 } 
+]
+
+
+function idademaior(aluno) {
+    return aluno.idade >= 20
+}
+
+function idademenor(aluno) {
+    return aluno.idade <= 20
+}
+
+let alunosmaiores = aluno.filter(idademaior)
+let alunosmenores = aluno.filter(idademenor)
+
+console.log(alunosmaiores)
+console.log(alunosmenores)*/
+
+
+
+3) /* 
+let array = [1, 2, 3, 4, 5, 6]
+let arraydobro = []
+
+function dobro(max) {
+  for(numero of array) {
+  arraydobro.push(numero*2)
+ 
+  console.log(arraydobro)
+  
+  }
+}
+
+dobro(array) */ 
+
+
 
