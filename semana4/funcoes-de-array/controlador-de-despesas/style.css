@@ -1,0 +1,48 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    background-color: hotpink;
+}
+
+
+#despesas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    border-bottom: 1.2px dotted;
+
+
+}
+
+#detalhadas{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    border-bottom: 1.2px dotted;
+
+}
+
+
+#extrato{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    /*background-color: gainsboro;*/
+
+
+}
+
+#despesasfinal{
+    font-size: 30px;
+    color: red;
+}
