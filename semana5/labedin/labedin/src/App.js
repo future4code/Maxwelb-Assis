@@ -22,10 +22,11 @@ function App() {
       </div>
 
       <div>
-        <CardPequeno email="Email: max.assis@ymail.com" imagem="https://image.flaticon.com/icons/svg/561/561127.svg "/>
+        <CardPequeno email="Email: max.assis@ymail.com" imagem2="https://image.flaticon.com/icons/svg/561/561127.svg " />
       </div>
+
       <div>
-        <CardPequeno end="Rua: Vale do Silicio" />
+        <CardPequeno end="Rua: Vale do Silicio" imagem3="https://image.flaticon.com/icons/svg/684/684809.svg" />
 
       </div>
 
