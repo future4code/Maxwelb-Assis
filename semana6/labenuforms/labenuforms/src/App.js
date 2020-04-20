@@ -12,16 +12,6 @@ class App extends React.Component {
     etapa: 1,
   }
   
-  render () {
-      return (
-        <div>
-          {this.renderizaEtapa()}
-          <button onClick={this.proximaEtapa}>Próxima Etapa</button>
-        </div>
-      )
-    }
-  }
-
  renderizaEtapa = () =>{
    switch (this.state.etapa) {
      case 1:
@@ -36,17 +26,30 @@ class App extends React.Component {
        case 4:
          return <Final /> 
         default:
-          return <Etapa1 /> 
+          return 
    }
 
  }
 
-proximaEtapa = () => {
-alert("testando ehehhehe")
+irParaProximaEtapa = () => {
+const etapaAtual = this.state.etapa
+const proximaEtapa = etapaAtual + 1
+
+this.setState({etapa: proximaEtapa})
+
+
 }
 
 
-
+render () {
+  return (
+    <div className="finalform">
+      {this.renderizaEtapa()}
+      <button onClick={this.irParaProximaEtapa}>Próxima Etapa</button>
+    </div>
+  )
+}
+}
 
 
  export default App

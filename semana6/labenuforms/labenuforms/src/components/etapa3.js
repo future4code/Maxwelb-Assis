@@ -9,9 +9,9 @@ render()
 return (
     <div className="formulario3">
         <h3>ETAPA 3 - INFORMAÇÕES GERAIS DE ENSINO</h3>
-        <p>5. Por que você não terminou um curso de graduação?</p>
+        <p>7. Por que você não terminou um curso de graduação?</p>
         <input></input>
-        <p>6. Você fez algum curso complementar?</p>
+        <p>8. Você fez algum curso complementar?</p>
         <select>
             <option>Curso tecnico</option>
             <option>Curso de ingles</option>
