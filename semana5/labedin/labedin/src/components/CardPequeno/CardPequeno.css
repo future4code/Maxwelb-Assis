@@ -1,0 +1,10 @@
+.peq {
+    display: flex;
+    align-items: left;
+    border: 1px solid black;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    height: 60px;
+    width: 500px;
+    
+}
