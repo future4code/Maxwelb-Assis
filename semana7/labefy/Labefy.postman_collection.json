@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "5102c933-0afa-453c-84dd-9805984fd212",
+		"_postman_id": "46ccc252-8790-4646-b58e-21663c89205d",
 		"name": "Labefy",
 		"description": "## Descrição\n</br>Esta API gerencia playlists e músicas.\n```\n\tFeito pela Labenu. Todos os direitos reservados\n```\n\n## Instruções gerais.\n\n**Autenticação**\n\nToda requisição deve ter uma identificação de quem está fazendo a requisição. Ela deve ser enviada por meio do header `Authorization`, da seguinte forma:\n\n`Authorization: \"nome-sobrenome-turma\"`\n\nPor exemplo, se meu nome é Bob Marley e eu sou da turma Newton, o header deve ser:\n\n`Authorization: \"bob-marley-newton\"`",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -13,7 +13,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "",
+						"value": "max-assis-julian",
 						"type": "text"
 					}
 				],
@@ -42,11 +42,11 @@
 					{
 						"key": "Authorization",
 						"type": "text",
-						"value": ""
+						"value": "max-assis-julian"
 					}
 				],
 				"url": {
-					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/search?name=string",
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/search?7caf4850-701c-467b-b21c-158f74daf502=rock",
 					"protocol": "https",
 					"host": [
 						"us-central1-labenu-apis",
@@ -60,8 +60,13 @@
 					],
 					"query": [
 						{
-							"key": "name",
-							"value": "string"
+							"key": "7caf4850-701c-467b-b21c-158f74daf502",
+							"value": "rock"
+						},
+						{
+							"key": "rock",
+							"value": "7caf4850-701c-467b-b21c-158f74daf502",
+							"disabled": true
 						}
 					]
 				},
@@ -77,7 +82,7 @@
 					{
 						"key": "Authorization",
 						"type": "text",
-						"value": ""
+						"value": "max-assis-julian"
 					}
 				],
 				"url": {
@@ -97,7 +102,7 @@
 					"variable": [
 						{
 							"key": "playlistId",
-							"value": "027f1eaf-3d07-46cf-aab3-7064d5935d80"
+							"value": "7caf4850-701c-467b-b21c-158f74daf502"
 						}
 					]
 				},
@@ -115,15 +120,17 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "",
+						"value": "max-assis-julian",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\": \"string\"\n}",
+					"raw": "{\n\t\"name\": \"brutal death metal\"\n}",
 					"options": {
-						"raw": {}
+						"raw": {
+							"language": "json"
+						}
 					}
 				},
 				"url": {
@@ -137,6 +144,13 @@
 					"path": [
 						"labefy",
 						"playlists"
+					],
+					"query": [
+						{
+							"key": "xcvcv",
+							"value": "asdd",
+							"disabled": true
+						}
 					]
 				},
 				"description": "### Descrição:\nEssa requisição cria uma nova playlist. \n\n### Input:\n**Headers**\n<br/>`Authorization`: token de autenticação da API\n```\n\tAuthorization: \"nome-sobrenome-turma\"\n```\n**Body**\n<br/>`name`: nome da playlist (obrigatório)\n```\n{\n\t\"name\": \"string\" \n}\n```"
@@ -194,14 +208,16 @@
 					{
 						"key": "Authorization",
 						"type": "text",
-						"value": ""
+						"value": "max-assis-julian"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\": \"string\",\n\t\"artist\": \"string\",\n\t\"url\": \"string\"\n}",
+					"raw": "{\n\t\"name\": \"Astronauta de Marmore\",\n\t\"artist\": \"Nenhum de Nos\",\n\t\"url\": \"https://music.youtube.com/watch?v=k8AhL0i-5as&list=RDAMVMk8AhL0i-5as\"\n}",
 					"options": {
-						"raw": {}
+						"raw": {
+							"language": "json"
+						}
 					}
 				},
 				"url": {
@@ -218,10 +234,17 @@
 						":playlistId",
 						"tracks"
 					],
+					"query": [
+						{
+							"key": "Brutal death metal",
+							"value": "3d801022-68b0-470d-a580-d3deb6cf67be",
+							"disabled": true
+						}
+					],
 					"variable": [
 						{
 							"key": "playlistId",
-							"value": "027f1eaf-3d07-46cf-aab3-7064d5935d80"
+							"value": "7caf4850-701c-467b-b21c-158f74daf502"
 						}
 					]
 				},
@@ -310,7 +333,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "ed86b246-c32c-43b9-a450-2f0e52d07933",
+				"id": "fdb1b3bc-9975-417d-a4ff-ddd72befa236",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -320,7 +343,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "6aab2b0d-6e77-46bc-a9e8-8efe64721f66",
+				"id": "9cc86249-31c8-401f-a12f-dd9396ef01f4",
 				"type": "text/javascript",
 				"exec": [
 					""
