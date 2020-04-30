@@ -19,6 +19,7 @@ let adicionarUsuario = () => {
         name: "nomeUsuario",
         email: "emailUsuario"
     }
+    
     axios.post('https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users', body, {
         headers: {
             authorization: "max"
@@ -69,7 +70,7 @@ return (
 <label>Email</label>
 <input onChange = {this.InputEmail} value={this.state.emailUsuario}/>
 <button onClick = {this.adicionarUsuario}>Salvar</button><br/><br/>
-<button>Ir para a Pagina de Lista</button>
+
 
 </Caixa>
 
