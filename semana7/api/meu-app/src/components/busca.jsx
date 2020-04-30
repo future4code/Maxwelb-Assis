@@ -29,7 +29,7 @@ class Busca extends React.Component {
     render() {
     return (
       <div>
-        <h1>testando o react</h1>
+        <h1></h1>
 
       </div>
     );
