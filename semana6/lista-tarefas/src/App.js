@@ -39,13 +39,24 @@ class App extends React.Component {
 
   onChangeInput = (event) => {
     this.setState({inputValue: event.target.value})
-    console.log(this.state.inputValue)
+
 
   }
 
   criaTarefa = () => {
+    const novaTarefa = [{
+      id: Date.now(), 
+      texto: this.state.inputValue,
+      completa: false
+    }] 
+
+  let novaListaDePost = [novaTarefa, ... this.state.tarefas]
+
+  this.setState({inputValue: novaListaDePost})
 
   }
+
+
 
   selectTarefa = (id) => {
 
