@@ -4,13 +4,15 @@ import Axios from "axios";
 import Busca from "./components/busca.jsx";
 
 class App extends React.Component {
+	
   render() {
     return (
-      <div>
-        <Busca />
-        
-      </div>
-    );
+      <Busca />
+      	
+
+    
+
+    )
   }
 }
 
