@@ -1,24 +1,20 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-export function PokeCard() {
+function PokeCard (props) {
   const [pokemon, setPokemon] = useState({})
-  
-
-    useState(() => {  
-    if (prevProps.pokemon !== props.pokemon) {
-      pegaPokemon(props.pokemon);
-    }
-  }, [prevProps])
 
 
- 
-  pegaPokemon = pokeName => {
+  useEffect(() => {
+    pegaPokemon(props.pokemon)
+  }, [props.pokemon])
+
+
+ const pegaPokemon = pokeName => {
     axios
       .get(`https://pokeapi.co/api/v2/pokemon/${pokeName}`)
       .then(response => {
-        // guarda as infos do pokemon no estado
-        this.setState({ pokemon: response.data });
+        setPokemon(response.data)
       })
       .catch(err => {
         console.log(err);
@@ -26,7 +22,6 @@ export function PokeCard() {
   };
 
   
-    const pokemon = this.state.pokemon;
 
     return (
       <div>
