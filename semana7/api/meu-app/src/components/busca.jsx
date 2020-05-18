@@ -6,14 +6,23 @@ import axios from "axios";
 const Caixa = styled.div`
 border: 1px solid;
 border-radius: 10px;
-margin: 0 auto 0 auto;
+margin: 70px auto 0 auto;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 width: 450px;
 height: 500px;
+
 `;
+
+
+const Selecao = styled.div`
+  display: inline;
+  margin: 0 auto 20px auto;
+  text-align: center;
+
+`
 
 
 class Busca extends React.Component {
@@ -60,23 +69,25 @@ class Busca extends React.Component {
   render() {
     return (
       <Caixa>
+        <Selecao>
         <h2>Atividades Para a Sua Quarentena</h2>
-        <label ><b>Escolha o Tipo de Atividade</b></label>
-        <select value={this.state.value} onChange={this.tipoAtividade}>
-          <option value=" "></option>
-          <option value="education">Educação</option>
-          <option value="recreational">Recreação</option>
-          <option value="social">Social</option>
-          <option value="diy">Faça voce mesmo</option>
-          <option value="charity">Caridade</option>
-          <option value="cooking">Cozinhar</option>
-          <option value="relaxation">Relaxamento</option>
-          <option value="music">Musica</option>
-          <option value="busywork">Trabalho Agitado</option>
-        </select>
+        <label ><b>Escolha o Tipo de Atividade: </b></label>
+        <select onChange={this.tipoAtividade}>
+          
+          <option key={" "} value=" "></option>
+          <option key={"education"} value="education">Educação</option>
+          <option key={"recreational"} value="recreational">Recreação</option>
+          <option key={"social"} value="social">Social</option>
+          <option key={"diy"} value="diy">Faça voce mesmo</option>
+          <option key={"charity"} value="charity">Caridade</option>
+          <option key={"cooking"} value="cooking">Cozinhar</option>
+          <option key={"relaxation"} value="relaxation">Relaxamento</option>
+          <option key={"musica"} value="music">Musica</option>
+          <option key={"busywork"} value="busywork">Trabalho Agitado</option>
+        </select><br/>
 
-        <label htmlFor=""><b>Numero de Participantes</b></label>
-        <select value={this.state.value} onChange={this.numeroParticipantes}>
+        <label htmlFor=" "><b>Numero de Participantes: </b></label>
+        <select onChange={this.numeroParticipantes}>
           <option value="0">0</option>
           <option value="1">1</option>
           <option value="2">2</option>
@@ -84,8 +95,9 @@ class Busca extends React.Component {
           <option value="4">4</option>
           <option value="5">5</option>
         </select>
-        
-        <button onClick={this.novaAtividade}>Gere uma Atividade Aleatoria</button>
+        </Selecao>
+
+        <button onClick={this.novaAtividade}>Gerar uma Atividade Aleatoria</button>
         <p><b>Atividade: </b> {this.state.atividade.activity}</p>
         <p><b>Acessibilidade: </b>{this.state.atividade.accessibility}</p>
         <p><b>Tipo : </b>{this.state.atividade.type}</p>
