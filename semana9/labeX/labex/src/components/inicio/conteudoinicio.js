@@ -34,7 +34,7 @@ function ConteudoInicio () {
 
     return(
         <Container>
-        <Botao variant="outlined" color='secondary' onClick={submit}>Clique Aqui !!! e Inscreva-se agora<br/>para Particiar de uma de Nossas Viagens<br/>Interplanetarias</Botao>
+        <Botao variant="outlined" color='secondary' onClick={submit}>Clique Aqui !!! e Inscreva-se agora<br/>para Participar de uma de Nossas Viagens<br/>Interplanetarias</Botao>
         <Imagem src="https://images2.imgbox.com/41/5e/uho7Rsre_o.jpg"></Imagem>
 
 

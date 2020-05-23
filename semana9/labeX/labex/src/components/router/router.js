@@ -1,11 +1,13 @@
 import React from 'react';
 import { Switch, Route, BrowserRouter } from "react-router-dom"
-import styled from 'styled-components'
 import HomePage from '../inicio/homepage';
 import Login from '../login/login';
-import ListaViagens from '../listaviagens/listaviagens';
-import CriarViagem from '../criarviagem/criarviagem';
-import EditarViagens from '../editarviagens/editarviagens';
+import AreaPrivada from '../areaprivada/areaprivada';
+import Inscricao from '../incrição/inscricao';
+import ListaDeViagens from '../listadeviagens/listadeviagens';
+import CriarViagens from '../criarviagens/criarviagens';
+import EditarInscricoes from '../editarinscricoes/editarinscricoes';
+import Signup from '../signup/signup';
 
 
 
@@ -14,29 +16,46 @@ function Router() {
     <div>
       <BrowserRouter>
       <Switch>
-        <Route exact path="/">
-          <HomePage />
-        </Route>
-        <Route exact path="/login">
-          <Login />
-        </Route>
-        <Route exact path="/listaviagens">
-          <ListaViagens />
-        </Route>
-        <Route exact path="/criarviagem">
-          <CriarViagem />
-        </Route>
-        <Route>
-          <EditarViagens exact path="/editarviagens" />
-        </Route>
+      
+      <Route path="/" exact={true}>
+        <HomePage/>
+      </Route> 
+
+      <Route path="/login" exact={true}>
+        <Login/>
+      </Route> 
+
+      <Route path="/privado" exact={true}>
+        <AreaPrivada/>
+      </Route> 
+
+      <Route path="/inscricao" exact={true}>
+        <Inscricao/>
+      </Route>  
+
+      <Route path="/listaviagens" exact={true}>
+        <ListaDeViagens/>
+        </Route> 
+
+      <Route path="/criarviagens" exact={true}>
+        <CriarViagens/>
+        </Route>  
+
+       <Route path="/editarinscricoes" exact={true}>
+        <EditarInscricoes/>
+         </Route> 
+
+       <Route path="/signup" exact={true}>
+        <Signup/>
+         </Route>   
+      
+      
+       
+
       </Switch>
     </BrowserRouter>
 
-      
-
-
-
-
+    
     </div>
   );
 }

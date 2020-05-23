@@ -1,18 +1,23 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import Header from "../header";
+import { Button } from '@material-ui/core'
+import ConteudoInicio from "./conteudoinicio"
+import Footer from "../footer";
 
-const HomePage = () => {
-  const history = useHistory();
 
-  const irParaLogin = () => {
-    history.push("login");
-  };
-
+function HomePage (props) {
+  
   return (
     <div>
-      INICIO <button onClick={irParaLogin}>Ir para página de Login</button>
+      <Header textoBotao="Login" pagina="login"/>
+      <ConteudoInicio/>
+      <Footer/>
+      
+     
     </div>
   );
 };
 
-export default HomePage;
+export default HomePage
+
