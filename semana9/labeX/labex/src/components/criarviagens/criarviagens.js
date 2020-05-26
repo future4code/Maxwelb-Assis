@@ -6,7 +6,7 @@ import Footer from "../footer";
 function CriarViagens () {
     return(
         <div>
-            <Header pagina="/" textoBotao="Inicio"/>
+            <Header pagina="/" textoBotao="Logout"/>
             <CriarViagensPrincipal/>
             <Footer/>
 

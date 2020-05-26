@@ -1,5 +1,6 @@
-import React from "react";
-import { useHistory } from "react-router-dom"
+import React, {useState} from "react";
+import axios from 'axios'
+import { useHistory} from "react-router-dom"
 import styled from 'styled-components'
 import Container from '@material-ui/core/Container'
 import Card from '@material-ui/core/Card'
@@ -32,32 +33,47 @@ const CaixaTexto = styled(TextField)`
 
 `
 
+const baseUrl =
+  "https://us-central1-labenu-apis.cloudfunctions.net/labeX/max-julian/login";
 
 
 function Loginprincipal () {
+    const history = useHistory();
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
 
-const history = useHistory()
+    const fazerLogin =  async () =>{
+    const body = {
+        email: email,
+        password: password
+      };
 
-const acessarAreaPrivada = () => {
-    history.push("/privado")
+      try {
+        const response = await axios.post(`${baseUrl}`, body);
+  
+        localStorage.setItem("token", response.data.token);
+        history.push("/privado");
+        console.log(response.data.token)
+      } catch (e) {
+        alert("Usuario ou senha Invalidos")
+        localStorage.clear()
+      }
+    
+    }  
 
-}
-
-const irCadastro = () => {
-    history.push("/signup")
-
-
-}
-
+    const irCadastro = () => {
+        history.push("/signup")
+    }
+    
     return (
 
     <Conteiner maxWidth="xl" >
         <Cartao color="primary" variant="outlined" >
         <h3>Login</h3><br/>
-        <CaixaTexto id="outlined-search" label="Email" type="search" variant="outlined"/><br/>
-        <CaixaTexto id="outlined-search" label="Senha" type="search" variant="outlined"/><br/><br/>
-        <Button color='secondary' variant="contained" onClick={acessarAreaPrivada}>Entrar</Button><br/>
-        <span>Nao Possui Conta? <a href="#" onClick={irCadastro}>Cadastre-se</a></span>
+        <CaixaTexto onChange={e => setEmail(e.target.value)} value={email} id="outlined-search" label="Email" type="search" variant="outlined"/><br/>
+        <CaixaTexto onChange={e => setPassword(e.target.value)} value={password} id="outlined-search" label="Senha" type="search" variant="outlined"/><br/><br/>
+        <Button color='secondary' variant="contained" onClick={fazerLogin}>Entrar</Button><br/>
+        <span>Nao Possui Conta?<a href="#" onClick={irCadastro}> Cadastre-se</a></span>
         </Cartao>
 
 

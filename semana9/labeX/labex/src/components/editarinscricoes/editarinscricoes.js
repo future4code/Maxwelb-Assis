@@ -7,7 +7,7 @@ import EditarIncricoesPrincipal from "./editarinscricoesprincipal";
 function EditarInscricoes () {
     return(
         <div>
-            <Header textoBotao="Inicio" pagina="/"/>
+            <Header textoBotao="Logout" pagina="/"/>
             <EditarIncricoesPrincipal/>
             <Footer/>
 

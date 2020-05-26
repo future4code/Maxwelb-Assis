@@ -10,7 +10,7 @@ import AreaPrivadaPrincipal from "./areaprivadaprincipal";
 function AreaPrivada (props) {
     return(
         <div>
-           <Header textoBotao="Inicio" pagina="/"/>
+           <Header textoBotao="Logout" pagina="/"/>
            <AreaPrivadaPrincipal/>
            <Footer/>
         </div>

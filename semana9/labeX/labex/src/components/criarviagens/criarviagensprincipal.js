@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { useHistory } from "react-router-dom";
 import styled from 'styled-components'
 import { Button } from '@material-ui/core'
@@ -41,6 +41,17 @@ const Selecti = styled(Select)`
 
 
 function CriarViagensPrincipal () {
+
+    const history = useHistory()
+
+    useEffect(() => {
+        const token = localStorage.getItem("token");
+    
+        if (token === null) {
+          history.push("/login");
+        }
+      }, [history]);
+
     return(
         <div>
             <Conteiner maxWidth="xl">

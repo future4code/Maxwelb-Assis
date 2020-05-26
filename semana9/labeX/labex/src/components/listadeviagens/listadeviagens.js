@@ -10,7 +10,7 @@ import ListaDeViagensPrincipal from "./listadeviagensprincipal";
 function ListaDeViagens () {
     return(
         <div>
-            <Header textoBotao="Inicio" pagina="/"/>
+            <Header textoBotao="Logout" pagina="/"/>
             <ListaDeViagensPrincipal/>
             <Footer/>
 
