@@ -33,26 +33,19 @@ function AreaPrivadaPrincipal () {
           }, [history]);
 
 
-        const irListaViagens = () => {
-            history.push("/listaviagens")
-
-        }
-
         const irCriarViagens = () => {
             history.push("/criarviagens")
         }
 
         const irEditarInscricoes = () => {
             history.push("/editarinscricoes")
-
-
+            
         }
 
 
     return(
         <Conteiner maxWidth="xl" >
             <Botao onClick={irCriarViagens} variant="outlined" color='secondary'>Crie Uma Viagem<br/> Interplanetaria</Botao>
-            <Botao onClick={irListaViagens} variant="outlined" color='secondary'>Lista de Viagens</Botao>
             <Botao onClick={irEditarInscricoes} variant="outlined" color='secondary'>Edite as Inscriçoes</Botao>
 
 

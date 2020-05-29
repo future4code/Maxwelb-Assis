@@ -67,7 +67,7 @@ function SignupPrincipal () {
             <Cartao color="primary" variant="outlined">
                 <h3>Crie uma Conta</h3><br/>
             <CaixaTexto onChange={onchangeEmail} value={inputEmail} id="outlined-search" label="Email" type="search" variant="outlined"/><br/>
-            <CaixaTexto onChange={onchangeSenha} value={inputSenha} id="outlined-search" label="Senha" type="search" variant="outlined"/><br/><br/>
+            <CaixaTexto onChange={onchangeSenha} value={inputSenha} id="outlined-search" label="Senha" type="password" variant="outlined"/><br/><br/>
             <Button onClick={cadastro} color='secondary' variant="contained">Cadastrar-se</Button><br/>
             </Cartao>
         </Conteiner>

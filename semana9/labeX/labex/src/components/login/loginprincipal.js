@@ -71,7 +71,7 @@ function Loginprincipal () {
         <Cartao color="primary" variant="outlined" >
         <h3>Login</h3><br/>
         <CaixaTexto onChange={e => setEmail(e.target.value)} value={email} id="outlined-search" label="Email" type="search" variant="outlined"/><br/>
-        <CaixaTexto onChange={e => setPassword(e.target.value)} value={password} id="outlined-search" label="Senha" type="search" variant="outlined"/><br/><br/>
+        <CaixaTexto onChange={e => setPassword(e.target.value)} value={password} id="outlined-search" label="Senha" type="password" variant="outlined"/><br/><br/>
         <Button color='secondary' variant="contained" onClick={fazerLogin}>Entrar</Button><br/>
         <span>Nao Possui Conta?<a href="#" onClick={irCadastro}> Cadastre-se</a></span>
         </Cartao>

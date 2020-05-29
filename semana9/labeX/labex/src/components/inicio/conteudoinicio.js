@@ -3,7 +3,6 @@ import { useHistory } from "react-router-dom";
 import { Button } from '@material-ui/core'
 import styled from 'styled-components'
 
-
 const Container = styled.div`
 display: flex;
 height: 480px;
@@ -14,6 +13,8 @@ justify-content: space-around;
 `
 const Imagem = styled.img`
 width: 390px;
+flex-wrap: wrap;
+display: flex;
 
 `
 const Botao = styled(Button)`
@@ -29,11 +30,11 @@ function ConteudoInicio () {
     const history = useHistory()
 
     const submit = () => {
-    history.push("/inscricao")
+    history.push("/listaviagens")
 }
 
     return(
-        <Container>
+        <Container >
         <Botao variant="outlined" color='secondary' onClick={submit}>Clique Aqui !!! e Inscreva-se agora<br/>para Participar de uma de Nossas Viagens<br/>Interplanetarias</Botao>
         <Imagem src="https://images2.imgbox.com/41/5e/uho7Rsre_o.jpg"></Imagem>
 

@@ -36,6 +36,7 @@ function Header (props) {
 
   const mudarPagina = () => {
     history.push(props.pagina);
+    localStorage.clear()
   };
 
 
