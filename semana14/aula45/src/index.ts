@@ -1,4 +1,6 @@
-/*// exercicio 1
+import * as fs from 'fs'
+
+// exercicio 1
 
 // a) usamos o comando process.argv
 
@@ -12,7 +14,7 @@ const idade: string = process.argv[3]
 const idade2: number = Number(valor) + Number(idade) 
 
 console.log(`Olá, ${nome}! Você tem ${idade} anos, daqui a 7 anos ${nome} tera ${idade2} anos`)
-*/
+
 
 // exercicio 2
 
@@ -31,4 +33,19 @@ switch(operacao){
         default:
         console.log("escolha adicao ou subtracao") 
         break;     
-}
+} 
+
+
+
+// exercicio 3
+
+
+const data: string = process.argv[2]
+const filename: string = "tarefas.txt"
+
+try{
+	fs.appendFileSync(filename, data)
+	console.log("tarefa criada")
+} catch(err) {
+	console.log(err)
+}	
