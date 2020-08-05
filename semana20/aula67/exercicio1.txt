@@ -1,0 +1,25 @@
+exercicio 1
+
+b) ira retornar 400 e a mensagem "Missing Input"
+
+c) ira retornar status 400 e a mensagem "missing email" e "invalid password"
+
+d) Ira retornar status 400 e a mensagem"missing name" e "invalid password"
+
+e) ira retornar status 400 e "invalid password"
+
+f) status 200 e "user is correct"
+
+g) statusCode : 422
+
+h)
+
+{
+  "user": {
+		"info": {
+			"name": "Astrodev",
+			"email": "astrodev@f4.com.br",
+			"password": "123456"
+		}
+  }
+}
