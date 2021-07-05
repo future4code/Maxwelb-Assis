@@ -1,0 +1,22 @@
+{
+  "name": "aula53",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@types/express": "^4.17.0",
+    "@types/knex": "^0.16.1",
+    "@types/node": "^14.0.20",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.0",
+    "knex": "^0.21.1",
+    "mysql": "^2.18.1",
+    "typescript": "^3.9.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "ts-node ./src/index.ts"
+  },
+  "author": "",
+  "license": "ISC"
+}
